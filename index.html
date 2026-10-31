@@ -7,7 +7,23 @@
 
   <main class="app">
     <input type="file" id="file" accept="audio/*" />
-    <audio id="player" controls></audio>
+    <audio id="player" preload="metadata"></audio>
+    <div class="player-controls" role="group" aria-label="Audio controls">
+      <button class="play-button" id="play-toggle" type="button" aria-label="Play" disabled>
+        <span id="play-icon" aria-hidden="true">&#9654;</span>
+      </button>
+      <div class="progress-control">
+        <input class="range seek-range" id="seek" type="range" min="0" max="0" value="0" aria-label="Seek" disabled />
+        <div class="time-labels">
+          <span id="current-time">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <label class="volume-control">
+        <span>VOL</span>
+        <input class="range volume-range" id="volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume" />
+      </label>
+    </div>
     <canvas id="canvas"></canvas>
   </main>
 
