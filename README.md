@@ -5,7 +5,7 @@ A reactive music player with visualizers that move with your music.
 Flowsic plays your local audio files and draws live visuals that respond to the sound, and eventually to your mouse or touch too. It's built with web technology, so the same app can run on Windows and mobile.
 
 ## Status
-Litteratly a plain project
+Controls and basic UI has been done
 
 ## Planned features
 
